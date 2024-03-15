@@ -40,12 +40,15 @@
     ?>
     <!-- PHP -->
     <div class="container">
-        <div>
-            <h1><?php echo $banned_word ?></h1>
-            <h1>First input: <?php echo $first_input ?></h1>
-            <h1>Area input: <?php echo $area_input ?></h1>
-            <h1>Length: <?php echo $length ?></h1>
-            <h1>Banned word length: <?php echo $banned_area_length ?></h1>
+        <div class="d-flex my-5 gap-5">
+            <div>
+            <h2><?php echo $banned_word ?></h2>
+            </div>
+            <div class="d-flex flex-column justify-content-center gap-3">
+            <h1 class="rounded-2 p-3 d-flex flex-column bg-warning text-black"> <span>Banned word:</span>   <span><?php echo $first_input ?></span></h1>
+            <h1 class="rounded-2 p-3 d-flex flex-column bg-success text-black">Original length: <br> <?php echo $length ?></h1>
+            <h1 class="rounded-2 p-3 d-flex flex-column bg-danger text-black" >Censored text length: <?php echo $banned_area_length ?></h1>
+            </div>
         </div>
 
     </div>
