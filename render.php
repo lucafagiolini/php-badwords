@@ -28,9 +28,25 @@
     <!-- PHP -->
     <?php
 
+    $first_input = $_GET['first_input'];
+    $area_input = $_GET['area_input'];
+
+    $length = strlen($area_input);
+
+    $banned_word = str_replace($first_input, '***', $area_input);
+    $banned_area_length = strlen($banned_word);
+
+
     ?>
     <!-- PHP -->
     <div class="container">
+        <div>
+            <h1><?php echo $banned_word ?></h1>
+            <h1>First input: <?php echo $first_input ?></h1>
+            <h1>Area input: <?php echo $area_input ?></h1>
+            <h1>Length: <?php echo $length ?></h1>
+            <h1>Banned word length: <?php echo $banned_area_length ?></h1>
+        </div>
 
     </div>
 

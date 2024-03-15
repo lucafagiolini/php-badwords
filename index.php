@@ -27,11 +27,11 @@
 <body data-bs-theme="dark">
     <form class="container" action="render.php" method="GET">
         <div class="mb-3">
-            <label for="first_input" class="form-label">Email address</label>
-            <input name="first_input" type="text" class="form-control" id="first_input" placeholder="name@example.com">
+            <label for="first_input" class="form-label"></label>
+            <input name="first_input" type="text" class="form-control" id="first_input" placeholder="insert a bad word">
         </div>
         <div class="mb-3">
-            <label for="area_input" class="form-label">Example textarea</label>
+            <label for="area_input" class="form-label">Insert a text that have inside at least 1 time the word you chosed before</label>
             <textarea name="area_input" class="form-control" id="area_input" rows="3"></textarea>
         </div>
         <input type="submit">
