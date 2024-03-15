@@ -24,11 +24,17 @@
 
 
 
-<body>
-    <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+<body data-bs-theme="dark">
+    <form class="container" action="render.php" method="GET">
+        <div class="mb-3">
+            <label for="frist_input" class="form-label">Email address</label>
+            <input name="frist_input" type="text" class="form-control" id="frist_input" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="area_input" class="form-label">Example textarea</label>
+            <textarea name="area_input" class="form-control" id="area_input" rows="3"></textarea>
+        </div>
+    </form>
 
 
 
